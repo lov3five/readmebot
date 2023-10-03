@@ -90,7 +90,7 @@ got(APIforecast, {
         const degC = Math.round(qty(`${degF} degF`).to('degC').scalar)
         const icon = json.DailyForecasts[0].Day.Icon
 
-        fs.readFile('./template.svg', 'utf8', (err, data) => {
+        fs.readFile('template.svg', 'utf8', (err, data) => {
             if (err) {
                 console.error(err)
                 return
@@ -103,7 +103,7 @@ got(APIforecast, {
             data = data.replace('{todayDay}', todayDay)
             data = data.replace('{dayBubbleWidth}', dayBubbleWidths[todayDay])
 
-            data = fs.writeFile('./autochat.svg', data, (err) => {
+            data = fs.writeFile('autochat.svg', data, (err) => {
                 if (err) {
                     console.error(err)
                     return
