@@ -2,9 +2,9 @@ name: UPDATE-AUTO
 
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '0 21,8 * * *' # Chạy vào lúc  theo múi giờ UTC+7
   workflow_dispatch:
-# Chạy vào lúc 17:30 theo múi giờ UTC+7
+
 jobs:
   readmebot:
     runs-on: ubuntu-latest
