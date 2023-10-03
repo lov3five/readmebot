@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate README.md
+      - name: Generate new SVG
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: node generate-svg.js
