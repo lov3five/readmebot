@@ -5,10 +5,11 @@
   "author": "lov3five",
   "scripts": {
     "lint": "eslint . --ext js --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write \"src/**/*.{js}\""
+    "format": "prettier --write \"./*.js\""
   },
   "dependencies": {
     "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
     "got": "^11.8.5",
     "js-quantities": "^1.8.0"
   },
