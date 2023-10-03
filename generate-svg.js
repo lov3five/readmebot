@@ -40,13 +40,13 @@ const emojis = {
 
 // Change width of bubbles depending on the day
 let dayBubbleWidths = {
-  Monday: 235,
-  Tuesday: 235,
-  Wednesday: 260,
-  Thursday: 245,
-  Friday: 220,
-  Saturday: 245,
-  Sunday: 230,
+  Monday: 345,
+  Tuesday: 345,
+  Wednesday: 370,
+  Thursday: 355,
+  Friday: 330,
+  Saturday: 355,
+  Sunday: 340,
 }
 
 // Time working at the company X
