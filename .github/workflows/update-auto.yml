@@ -2,7 +2,7 @@ name: UPDATE-AUTO
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '30 10 * * *'  # Chạy vào lúc 17:30 theo múi giờ UTC+7
   workflow_dispatch:
 
 jobs:
