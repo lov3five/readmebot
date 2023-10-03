@@ -1,0 +1,33 @@
+name: UPDATE-AUTO
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  readmebot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run : npm install
+
+      - name: Generate README.md
+        env:
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+        run: node generate-svg.js
+
+      - name: Commit changes filt
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Luong Tran
+          author_email: luongtranstaff@gmail.com
+          message: 'Auto update README.md'
+          add: '*.svg'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
