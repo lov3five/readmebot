@@ -85,7 +85,7 @@ got(apiForecast, {
   .then((response) => {
     let json = JSON.parse(response.body)
     const degF = Math.round(json.DailyForecasts[0].Temperature.Maximum.Value)
-    const degC = Math.round(qty(`${degF} degF`).to('degC').scalar)
+    const degC = Math.round(qty(`${degF} tempF`).to('tempC').scalar)
     const icon = json.DailyForecasts[0].Day.Icon
 
     fs.readFile('template.svg', 'utf8', (err, data) => {
