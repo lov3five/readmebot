@@ -22,14 +22,15 @@ jobs:
         run: npm install
       
       - name: Generate new SVG
-        env:
-          WEATHER_API_KEY: 
         run: |
           echo "WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}"
           touch .env
           echo "WEATHER_API_KEY= ${{ secrets.WEATHER_API_KEY }}" >> .env
           cat .env
           node ./generate-svg.js
+
+      - name: Github stuff
+        run: echo "My github repo is called: ${{ github.repository }}"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
