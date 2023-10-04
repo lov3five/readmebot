@@ -1,0 +1,55 @@
+name: Simple manual workflows - three environments (DEV, QA, PROD)
+
+# Control when the workflow will run
+on:
+  # Allow you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Define the job name
+jobs:
+
+  DEV:
+    #The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    environment: DEV
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Run scripts
+        run: |
+          echo "Running scripts for DEV environment"
+
+
+    QA:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+      environment: QA
+      needs: DEV
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v2
+
+        - name: Run scripts
+          run: |
+            echo "Running scripts for QA environment"
+
+
+    PROD: 
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+      environment: PROD
+      needs: QA
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v2
+
+        - name: Run scripts
+          run: |
+            echo "Running scripts for PROD environment"
