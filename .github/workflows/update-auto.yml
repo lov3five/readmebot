@@ -20,6 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Test
+        run: |
+          echo "Test environment secrets: ${{ env.TEST_KEY }}"
       
       - name: Generate new SVG
         env:
