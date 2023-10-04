@@ -2,13 +2,13 @@ name: UPDATE-AUTO
 
 on:
   schedule:
-    - cron: '* 21,8 * * *' # Chạy vào lúc  theo múi giờ UTC+7
+    - cron: '0 21,8 * * *' # Chạy vào lúc 4h00 và 15h00  theo múi giờ UTC+7
   workflow_dispatch:
 
 jobs:
   readmebot:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
