@@ -30,7 +30,8 @@ jobs:
           node ./generate-svg.js
 
       - name: Github stuff
-        run: echo "My github repo is called: ${{ github.repository }}"
+        run: |
+          echo "My github repo is called: ${{ github.repository }}"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
