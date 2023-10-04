@@ -9,8 +9,7 @@ jobs:
   readmebot:
     runs-on: ubuntu-latest
 
-    environment:
-      name: Test environment
+    env:
       TEST_KEY: ${{ secrets.TEST_KEY }}
 
     steps:
