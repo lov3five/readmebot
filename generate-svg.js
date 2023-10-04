@@ -1,10 +1,11 @@
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY
+
 const fs = require('fs')
 const got = require('got')
 const qty = require('js-quantities')
 const formatDistance = require('date-fns/formatDistance')
 require('dotenv').config()
 
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 const WEATHER_DOMAIN = 'http://dataservice.accuweather.com'
 
 const emojis = {

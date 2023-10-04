@@ -24,8 +24,7 @@ jobs:
       - name: Generate new SVG
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-        run: |
-          echo "WEATHER_API_KEY: $WEATHER_API_KEY"
+        run: node generate-svg.js
 
       - name: Github stuff
         run: |
