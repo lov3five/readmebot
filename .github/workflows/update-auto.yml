@@ -8,10 +8,7 @@ on:
 jobs:
   readmebot:
     runs-on: ubuntu-latest
-
-    env:
-      TEST_KEY: ${{ secrets.TEST_KEY }}
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -24,10 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Test environment
-        run: |
-          echo "Test environment secrets: $TEST_KEY"
-      
       - name: Generate new SVG
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
