@@ -22,9 +22,11 @@ jobs:
         run: npm install
 
       - name: Generate new SVG
-        env:
-          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-        run: node ./generate-svg.js
+        run: |
+          touch .env
+          echo WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }} >> .env
+          cat .env
+          node ./generate-svg.js
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
