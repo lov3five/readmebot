@@ -27,7 +27,7 @@ jobs:
 
       - name: Test environment
         run: |
-          echo "Test environment secrets: $SECRET_API_KEY"
+          echo "Test environment secrets: $TEST_KEY"
       
       - name: Generate new SVG
         env:
