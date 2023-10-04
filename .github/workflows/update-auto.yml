@@ -24,7 +24,7 @@ jobs:
       - name: Generate new SVG
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-        run: node generate-svg.js
+        run: node ./generate-svg.js
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
@@ -32,6 +32,6 @@ jobs:
           author_name: Luong Tran
           author_email: luongtranstaff@gmail.com
           message: 'Auto update README.md'
-          add: '*.svg'
+          add: 'autochat.svg'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
