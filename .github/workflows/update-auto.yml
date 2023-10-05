@@ -34,7 +34,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
-          author_name: Luong Tran
+          author_name: lov3five
           author_email: luongtranstaff@gmail.com
           message: 'Auto update README.md'
           add: 'autochat.svg'
