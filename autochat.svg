@@ -309,7 +309,7 @@
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="516" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I live in Ho Chi Minh City, Vietnam ❤ "red blood, yellow skin". </text>
-    <text x="15" y="50">Weather forecast today: 31° C (88° F) and <tspan class="emoji">🌧</tspan> today.</text>
+    <text x="15" y="50">Weather forecast today: 33° C (91° F) and <tspan class="emoji">🌧</tspan> today.</text>
   </g>
 
   <!-- typing 3 -->
@@ -395,7 +395,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 266)" class="msg-6">
-    <rect width="355" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27" class="blink-text">🎉 Have a great Saturday! <tspan class="emoji">👋</tspan></text>  
+    <rect width="340" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27" class="blink-text">🎉 Have a great Sunday! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
