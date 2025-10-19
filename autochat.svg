@@ -308,8 +308,8 @@
   <!-- From Ho Chi Minh City... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="516" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I live in Ho Chi Minh City, Vietnam ❤ "red blood, yellow skin". </text>
-    <text x="15" y="50">Weather forecast today: 32° C (90° F) and <tspan class="emoji">🌧</tspan> today.</text>
+    <text x="15" y="27">I live in Da Nang City, Vietnam ❤ "red blood, yellow skin". </text>
+    <text x="15" y="50">Weather forecast today: 29° C (84° F) and <tspan class="emoji">🌧</tspan> today.</text>
   </g>
 
   <!-- typing 3 -->
@@ -329,8 +329,8 @@
   <!-- <g transform="translate(10, 120)" class="msg-3"> -->
   <g transform="translate(10, 120)" class="msg-3">
     <!-- <rect width="439" height="66.1302" rx="18.0355" class="bubble" /> -->
-    <rect width="439" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I’m a software engineer. I used to work at GEEK UP.</text>
+    <rect width="600" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27">I’m a software engineer. I am working at @DIPROTECH | ex-@GEEK Up.</text>
     <!-- <text x="15" y="50">but I’ve been at PlanetScale for {psTime} now.</text> -->
   </g>
 
@@ -395,7 +395,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 266)" class="msg-6">
-    <rect width="345" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27" class="blink-text">🎉 Have a great Tuesday! <tspan class="emoji">👋</tspan></text>  
+    <rect width="340" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27" class="blink-text">🎉 Have a great Sunday! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
