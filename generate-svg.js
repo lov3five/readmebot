@@ -1,11 +1,10 @@
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY
-
 const fs = require('fs')
 const got = require('got')
 const qty = require('js-quantities')
 const formatDistance = require('date-fns/formatDistance')
 require('dotenv').config()
 
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 const WEATHER_DOMAIN = 'http://dataservice.accuweather.com'
 
 const emojis = {
@@ -77,7 +76,7 @@ const startDateWorkingAtGU = formatDistance(new Date(2023, 2, 13), today, {
         "LocalizedName": "Ho Chi Minh"
     }
 }] */
-const locationKey = '353981'
+const locationKey = '352954' // Da Nang City
 let apiForecast = `forecasts/v1/daily/1day/${locationKey}?apikey=${WEATHER_API_KEY}`
 
 got(apiForecast, {
